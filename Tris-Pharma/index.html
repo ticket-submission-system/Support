@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body{
+        margin: 0; /* Remove default margin */
+    }
+    iframe{      
+        display: block;  /* iframes are inline by default */   
+        height: 100vh;  /* Set height to 100% of the viewport height */   
+        width: 100vw;  /* Set width to 100% of the viewport width */     
+        border: none; /* Remove default border */
+        background: lightyellow; /* Just for styling */
+    }
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<iframe class="collector-preview"  src="https://projectelephant.atlassian.net/rest/collectors/1.0/template/form/5de88d72" frameborder="0" scrolling="no" onload='$(".collector-preview")[0].contentWindow.postMessage("{ \"messageType\": \"collector.iframe.loaded\" }", "https://projectelephant.atlassian.net/rest/collectors/1.0/template/form/5de88d72");'></iframe>
+
+
+</body>
+</html>
